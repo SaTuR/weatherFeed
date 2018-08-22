@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		300B84C91E9C18DF000AAFA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84C81E9C18DF000AAFA6 /* AppDelegate.swift */; };
+		300B84D01E9C18DF000AAFA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300B84CF1E9C18DF000AAFA6 /* Assets.xcassets */; };
+		300B84E01E9C1931000AAFA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300B84DC1E9C1931000AAFA6 /* LaunchScreen.storyboard */; };
+		300B84E11E9C1931000AAFA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300B84DE1E9C1931000AAFA6 /* Main.storyboard */; };
+		300B84E31E9C1994000AAFA6 /* WeatherFeedServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84E21E9C1994000AAFA6 /* WeatherFeedServices.swift */; };
+		300B84E51E9C19B8000AAFA6 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84E41E9C19B8000AAFA6 /* Util.swift */; };
+		300B84E71E9C20E3000AAFA6 /* CityDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84E61E9C20E3000AAFA6 /* CityDataProtocol.swift */; };
+		300B84E91E9C21C3000AAFA6 /* ForecastDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84E81E9C21C3000AAFA6 /* ForecastDataProtocol.swift */; };
+		300B84F31E9D435C000AAFA6 /* CityManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84F21E9D435C000AAFA6 /* CityManagerViewController.swift */; };
+		300B84F51E9D495B000AAFA6 /* CitiesTableDelegateDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84F41E9D495B000AAFA6 /* CitiesTableDelegateDataSource.swift */; };
+		300B84F71E9D4AA2000AAFA6 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84F61E9D4AA2000AAFA6 /* CitiesTableViewCell.swift */; };
+		300B84F91E9D6B96000AAFA6 /* CitiesTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300B84F81E9D6B96000AAFA6 /* CitiesTableDelegate.swift */; };
+		3083EB9F1E9E77BB00C8841A /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083EB9E1E9E77BB00C8841A /* WeatherCollectionViewCell.swift */; };
+		3083EBA11E9E77E600C8841A /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083EBA01E9E77E600C8841A /* WeatherViewController.swift */; };
+		3083EBA31E9E7A0F00C8841A /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3083EBA21E9E7A0F00C8841A /* ForecastTableViewCell.swift */; };
+		45279D312123DDFD00BBDBC7 /* DataSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45279D302123DDFD00BBDBC7 /* DataSingleton.swift */; };
+		45279D332123DEB400BBDBC7 /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45279D322123DEB400BBDBC7 /* CityData.swift */; };
+		45279D352123DF3500BBDBC7 /* ForecastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45279D342123DF3500BBDBC7 /* ForecastData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		300B84C51E9C18DF000AAFA6 /* weatherFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		300B84C81E9C18DF000AAFA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		300B84CF1E9C18DF000AAFA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		300B84D41E9C18DF000AAFA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300B84DD1E9C1931000AAFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		300B84DF1E9C1931000AAFA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		300B84E21E9C1994000AAFA6 /* WeatherFeedServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherFeedServices.swift; sourceTree = "<group>"; };
+		300B84E41E9C19B8000AAFA6 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		300B84E61E9C20E3000AAFA6 /* CityDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityDataProtocol.swift; sourceTree = "<group>"; };
+		300B84E81E9C21C3000AAFA6 /* ForecastDataProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastDataProtocol.swift; sourceTree = "<group>"; };
+		300B84F21E9D435C000AAFA6 /* CityManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityManagerViewController.swift; sourceTree = "<group>"; };
+		300B84F41E9D495B000AAFA6 /* CitiesTableDelegateDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableDelegateDataSource.swift; sourceTree = "<group>"; };
+		300B84F61E9D4AA2000AAFA6 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		300B84F81E9D6B96000AAFA6 /* CitiesTableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesTableDelegate.swift; sourceTree = "<group>"; };
+		3083EB9E1E9E77BB00C8841A /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		3083EBA01E9E77E600C8841A /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		3083EBA21E9E7A0F00C8841A /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		45279D302123DDFD00BBDBC7 /* DataSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSingleton.swift; sourceTree = "<group>"; };
+		45279D322123DEB400BBDBC7 /* CityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
+		45279D342123DF3500BBDBC7 /* ForecastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300B84C21E9C18DF000AAFA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		300B84BC1E9C18DF000AAFA6 = {
+			isa = PBXGroup;
+			children = (
+				300B84C71E9C18DF000AAFA6 /* weatherFeed */,
+				300B84C61E9C18DF000AAFA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		300B84C61E9C18DF000AAFA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300B84C51E9C18DF000AAFA6 /* weatherFeed.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		300B84C71E9C18DF000AAFA6 /* weatherFeed */ = {
+			isa = PBXGroup;
+			children = (
+				300B84EC1E9D39F4000AAFA6 /* Controllers */,
+				300B84ED1E9D39F4000AAFA6 /* Models */,
+				300B84DA1E9C1931000AAFA6 /* Utils */,
+				300B84DB1E9C1931000AAFA6 /* Views */,
+				300B84C81E9C18DF000AAFA6 /* AppDelegate.swift */,
+				300B84CF1E9C18DF000AAFA6 /* Assets.xcassets */,
+				300B84D41E9C18DF000AAFA6 /* Info.plist */,
+			);
+			path = weatherFeed;
+			sourceTree = "<group>";
+		};
+		300B84DA1E9C1931000AAFA6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				300B84E21E9C1994000AAFA6 /* WeatherFeedServices.swift */,
+				300B84E41E9C19B8000AAFA6 /* Util.swift */,
+				300B84E61E9C20E3000AAFA6 /* CityDataProtocol.swift */,
+				300B84E81E9C21C3000AAFA6 /* ForecastDataProtocol.swift */,
+				300B84F81E9D6B96000AAFA6 /* CitiesTableDelegate.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		300B84DB1E9C1931000AAFA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				300B84DC1E9C1931000AAFA6 /* LaunchScreen.storyboard */,
+				300B84DE1E9C1931000AAFA6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		300B84EC1E9D39F4000AAFA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				300B84F21E9D435C000AAFA6 /* CityManagerViewController.swift */,
+				300B84F41E9D495B000AAFA6 /* CitiesTableDelegateDataSource.swift */,
+				300B84F61E9D4AA2000AAFA6 /* CitiesTableViewCell.swift */,
+				3083EBA01E9E77E600C8841A /* WeatherViewController.swift */,
+				3083EB9E1E9E77BB00C8841A /* WeatherCollectionViewCell.swift */,
+				3083EBA21E9E7A0F00C8841A /* ForecastTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		300B84ED1E9D39F4000AAFA6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45279D302123DDFD00BBDBC7 /* DataSingleton.swift */,
+				45279D322123DEB400BBDBC7 /* CityData.swift */,
+				45279D342123DF3500BBDBC7 /* ForecastData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		300B84C41E9C18DF000AAFA6 /* weatherFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300B84D71E9C18DF000AAFA6 /* Build configuration list for PBXNativeTarget "weatherFeed" */;
+			buildPhases = (
+				300B84C11E9C18DF000AAFA6 /* Sources */,
+				300B84C21E9C18DF000AAFA6 /* Frameworks */,
+				300B84C31E9C18DF000AAFA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weatherFeed;
+			productName = weatherFeed;
+			productReference = 300B84C51E9C18DF000AAFA6 /* weatherFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		300B84BD1E9C18DF000AAFA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ihonahan Buitrago";
+				TargetAttributes = {
+					300B84C41E9C18DF000AAFA6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 300B84C01E9C18DF000AAFA6 /* Build configuration list for PBXProject "weatherFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 300B84BC1E9C18DF000AAFA6;
+			productRefGroup = 300B84C61E9C18DF000AAFA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				300B84C41E9C18DF000AAFA6 /* weatherFeed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		300B84C31E9C18DF000AAFA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300B84E11E9C1931000AAFA6 /* Main.storyboard in Resources */,
+				300B84D01E9C18DF000AAFA6 /* Assets.xcassets in Resources */,
+				300B84E01E9C1931000AAFA6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		300B84C11E9C18DF000AAFA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300B84F51E9D495B000AAFA6 /* CitiesTableDelegateDataSource.swift in Sources */,
+				300B84E91E9C21C3000AAFA6 /* ForecastDataProtocol.swift in Sources */,
+				300B84E31E9C1994000AAFA6 /* WeatherFeedServices.swift in Sources */,
+				45279D312123DDFD00BBDBC7 /* DataSingleton.swift in Sources */,
+				3083EBA31E9E7A0F00C8841A /* ForecastTableViewCell.swift in Sources */,
+				3083EBA11E9E77E600C8841A /* WeatherViewController.swift in Sources */,
+				300B84E51E9C19B8000AAFA6 /* Util.swift in Sources */,
+				300B84F71E9D4AA2000AAFA6 /* CitiesTableViewCell.swift in Sources */,
+				45279D332123DEB400BBDBC7 /* CityData.swift in Sources */,
+				300B84F31E9D435C000AAFA6 /* CityManagerViewController.swift in Sources */,
+				300B84F91E9D6B96000AAFA6 /* CitiesTableDelegate.swift in Sources */,
+				3083EB9F1E9E77BB00C8841A /* WeatherCollectionViewCell.swift in Sources */,
+				300B84E71E9C20E3000AAFA6 /* CityDataProtocol.swift in Sources */,
+				45279D352123DF3500BBDBC7 /* ForecastData.swift in Sources */,
+				300B84C91E9C18DF000AAFA6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		300B84DC1E9C1931000AAFA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				300B84DD1E9C1931000AAFA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		300B84DE1E9C1931000AAFA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				300B84DF1E9C1931000AAFA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		300B84D51E9C18DF000AAFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		300B84D61E9C18DF000AAFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		300B84D81E9C18DF000AAFA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = weatherFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextu.weatherFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		300B84D91E9C18DF000AAFA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = weatherFeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextu.weatherFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		300B84C01E9C18DF000AAFA6 /* Build configuration list for PBXProject "weatherFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300B84D51E9C18DF000AAFA6 /* Debug */,
+				300B84D61E9C18DF000AAFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300B84D71E9C18DF000AAFA6 /* Build configuration list for PBXNativeTarget "weatherFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300B84D81E9C18DF000AAFA6 /* Debug */,
+				300B84D91E9C18DF000AAFA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 300B84BD1E9C18DF000AAFA6 /* Project object */;
+}
