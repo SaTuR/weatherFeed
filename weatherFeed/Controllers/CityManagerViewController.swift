@@ -104,12 +104,13 @@ class CityManagerViewController: UIViewController, UITextFieldDelegate, CitiesTa
                 debugPrint(success)
                 DataSingleton.shared.City.append(city!)
                 self.safeReloadCollectionData()
-                self.hideLoading(animated: true)
+                self.hideLoading(animated: false)
             }
             else {
                 debugPrint("error")
             }
         }
+        //self.hideLoading(animated: true)
     }
     
     func deleteCity(index : Int){
@@ -129,5 +130,6 @@ class CityManagerViewController: UIViewController, UITextFieldDelegate, CitiesTa
     
     func safeReloadCollectionData() {
         self.citiesTable.reloadData()
+
     }
 }

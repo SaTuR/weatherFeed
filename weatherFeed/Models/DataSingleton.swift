@@ -18,16 +18,6 @@ class DataSingleton{
     
     func getAllNames()-> [CityDataProtocol]
     {
-        //var city : CityDataProtocol
-        /*WeatherFeedServices.shared.weatherData(with: "Guayaquil.") { (success, city) in
-         if success {
-         //self.City.append(city!)
-         self.City.append(city!)
-         }
-         }*/
-        //var data : [CityDataProtocol] = [CityDataProtocol]()
-        //data.removeAll()
-        //self.City.removeAll()
         return self.City
     }
     
