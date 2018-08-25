@@ -37,12 +37,12 @@ class WeatherCollectionViewCell: UICollectionViewCell, UITableViewDelegate, UITa
         let cell = tableView.dequeueReusableCell(withIdentifier: ForecastTableViewCell.identifier, for: indexPath) as! ForecastTableViewCell
         
         //TODO: Tu código aquí
-        cell.dateLabel?.text = Util.getFormattedDate(from: city.forecast[indexPath.row].date, format: "EEEE, d MMMM yyyy, hh:mm:ss a")
-        cell.descriptionLabel?.text = city.forecast[indexPath.row].description
-        cell.temperatureLabel?.text = city.forecast[indexPath.row].current.description + " ºC (" + city.forecast[indexPath.row].minimum.description  + " - " + city.forecast[indexPath.row].maximum.description + ")"
+        cell.dateLabel.text = Util.getFormattedDate(from: city.forecast[indexPath.row].date, format: "EEEE, d MMMM yyyy, hh:mm:ss a")
+        cell.descriptionLabel.text = city.forecast[indexPath.row].description
+        cell.temperatureLabel.text = city.forecast[indexPath.row].current.description + " ºC (" + city.forecast[indexPath.row].minimum.description  + " - " + city.forecast[indexPath.row].maximum.description + ")"
         //cell.iconImageView?.image = Util.iconWeather(code: city.forecast[indexPath.row].code
         let resultado3 = Util.iconWeather(code: city.forecast[indexPath.row].code)
-        cell.iconImageView?.image = resultado3.icon
+        cell.iconImageView.image = resultado3.icon
         backgroundImageView.image = resultado3.background
         return cell
     }

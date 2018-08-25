@@ -53,7 +53,11 @@ class CityManagerViewController: UIViewController, UITextFieldDelegate, CitiesTa
     @IBAction func tapUpAdd(sender: UIButton) {
         self.cityText.resignFirstResponder()
         //TODO: Tu código aquí
-        self.addCity()
+        
+        //self.addCity()
+        showLoading(animated: true)
+        let cityName : String = cityText.text!
+        citiesTableDelegate.addCity(cityName: cityName)
     }
     
     @IBAction func tapUpClose(sender: UIButton) {
@@ -96,7 +100,7 @@ class CityManagerViewController: UIViewController, UITextFieldDelegate, CitiesTa
     }
     
     //MARK: - CitiesTableDelegate methods
-    func addCity(){
+    /*func addCity(){
         showLoading(animated: true)
         let cityName : String = cityText.text!
         WeatherFeedServices.shared.weatherData(with: cityName) {( success , city) in
@@ -110,7 +114,11 @@ class CityManagerViewController: UIViewController, UITextFieldDelegate, CitiesTa
                 debugPrint("error")
             }
         }
-        //self.hideLoading(animated: true)
+    }*/
+    
+    func addCity(city : CityDataProtocol){
+                DataSingleton.shared.City.append(city)
+                //self.safeReloadCollectionData()
     }
     
     func deleteCity(index : Int){
@@ -130,6 +138,6 @@ class CityManagerViewController: UIViewController, UITextFieldDelegate, CitiesTa
     
     func safeReloadCollectionData() {
         self.citiesTable.reloadData()
-
+        self.hideLoading(animated: false)
     }
 }

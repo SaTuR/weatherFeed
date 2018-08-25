@@ -24,6 +24,7 @@ class WeatherViewController: UIViewController, UICollectionViewDelegate, UIColle
         if DataSingleton.shared.getAllNames().count <= 0 {
             self.perform(#selector(WeatherViewController.tapUpAdd(sender:)), with: self.addButton, afterDelay: 0.2)
         }
+        safeReloadCollectionData()
 
         //TODO: Tu código aquí
         NotificationCenter.default.addObserver(self, selector: #selector(self.safeReloadCollectionData), name: NSNotification.Name(rawValue:"updatedCities"), object: nil)
@@ -74,11 +75,12 @@ class WeatherViewController: UIViewController, UICollectionViewDelegate, UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WeatherCollectionViewCell.identifier, for: indexPath) as! WeatherCollectionViewCell
         
         //TODO: Tu código aquí
-        cell.nameLabel?.text = DataSingleton.shared.City[indexPath.row].name
-        cell.descriptionLabel?.text = DataSingleton.shared.City[indexPath.row].forecast[0].description
-        cell.temperatureLabel?.text = DataSingleton.shared.City[indexPath.row].forecast[0].current.description
-        cell.dateLabel?.text = Util.getFormattedDate(from: DataSingleton.shared.City[indexPath.row].forecast[0].date, format: "EEEE, d MMM yyy, hh:mm:ss a")
+        cell.nameLabel.text = DataSingleton.shared.City[indexPath.row].name
+        cell.descriptionLabel.text = DataSingleton.shared.City[indexPath.row].forecast[0].description
+        cell.temperatureLabel.text = DataSingleton.shared.City[indexPath.row].forecast[0].current.description
+        cell.dateLabel.text = Util.getFormattedDate(from: DataSingleton.shared.City[indexPath.row].forecast[0].date, format: "EEEE, d MMM yyy, hh:mm:ss a")
         cell.city = DataSingleton.shared.City[indexPath.row]
+        //safeReloadCollectionData()
         return cell
     }
     

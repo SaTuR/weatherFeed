@@ -11,7 +11,7 @@ import UIKit
 protocol CitiesTableDelegate {
     //TODO: Tu código aquí
     
-    func addCity()
+    func addCity(city : CityDataProtocol)
     
     func deleteCity(index : Int)
     

@@ -12,6 +12,15 @@ class CitiesTableDelegateDataSource: NSObject, UITableViewDelegate, UITableViewD
 
     var delegate: CitiesTableDelegate!
     
+    func addCity(cityName: String) {
+        //TODO: Tu código aquí
+        WeatherFeedServices.shared.weatherData(with: cityName) { (success, city) in
+            if success == true {
+                self.delegate.addCity(city: city!)
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "updateList"), object: nil)
+            }
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
